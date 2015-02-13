@@ -1,0 +1,9 @@
+body {
+    background: white;
+    font-family: HelveticaNeue, sans-serif;
+    margin: 50px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}

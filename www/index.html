@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flash version</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="js/flash.js"></script>
+</head>
+
+<body>
+
+
+    <h1>Check for flash and insert either swf or fallback in the simplest possible way</h1>
+
+    <div id="container"></div>
+
+
+    <script>
+
+        var config = {
+            upload  : '/flash/flash.swf',
+            image   : '/flash/fallback.jpg',
+            width   : 900,
+            height  : 1200,
+            position     : '#container',
+            clicktype    : 'clickTAG',
+            clickthrough : ['http://www.ba.no', 'http://www.oa.no', 'http://www.nordlys.no'],
+            flashParams: {
+                wmode: 'window',
+                scale: 'showall',
+                bgcolor: '#ff9900',
+                requiredFlashVersion: 16,
+                flashvars: '[clicktype]=_ADCLICK_[clickthrough]&[clicktype]1=_ADCLICK_[clickthrough1]&[clicktype]2=_ADCLICK_[clickthrough2]'
+            }
+        };
+
+        new xxx.Flash(config);
+
+    </script>
+
+</body>
+</html>
